@@ -1,6 +1,5 @@
 <script setup>
 
-import StudentCarousel from './common/StudentCarousel.vue'
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 import StudentsByLevelBlock from "./common/StudentsByLevelBlock.vue";
 </script>
@@ -16,9 +15,6 @@ import StudentsByLevelBlock from "./common/StudentsByLevelBlock.vue";
 
       <h3>Featured graduate students!</h3>
       <students-by-level-block :level="'graduate'" :limit="2" :show-title="false" />
-
-      <h2>Example of how a carousel Vue "plugin" works:</h2>
-      <student-carousel/>
     </template>
 
     <template #right>

@@ -1,5 +1,5 @@
 <script setup>
-import Card from '../students/Card.vue'
+import Card from "../students/Card.vue";
 
 const props = defineProps({
   students: {
@@ -11,7 +11,8 @@ const props = defineProps({
 
 <template>
   <section class="cards">
-    <card v-for="(student, index) in props.students" :key="index" :student-info="student"/>
+    <card v-for="(student, index) in props.students"
+          :key="index" :student-info="student"/>
   </section>
 </template>
 
