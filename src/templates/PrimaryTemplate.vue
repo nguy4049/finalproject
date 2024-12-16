@@ -9,8 +9,7 @@
         <router-link :to="{ name: 'Home' }">Home</router-link>
         <router-link :to="{ name: 'AllStudents' }">About</router-link>
         <router-link :to="{ name: 'AboutMe' }">Events</router-link>
-        <router-link :to="{ name: 'ContactMe' }">ContactMe</router-link>
-        <router-link :to="{ name: 'Resources' }">Resources</router-link>
+        <router-link :to="{ name: 'ContactMe' }">Contact Me</router-link>
       </nav>
     </header>
 
@@ -62,12 +61,6 @@ section.primary-template {
         /*border-radius: 10px;
         border: 1px solid grey;*/
 
-        &.router-link-active {
-          /*font-weight: bold;
-          text-decoration: underline;
-          background-color: darkblue;
-          border-color: white;
-          font-size: 105%;*/
         }
 
         &:hover {
@@ -86,20 +79,17 @@ section.primary-template {
     flex-direction: column;
     gap: 1rem;
     border: 1px solid lightgray;
-    }
     img {
       width: 100%;
       height: 100%;
     }
-  }
+}
 
     /* Tablet */
 @media screen and (width > 700px) {
       header {
         img {
           width: 9%;
-        }
-        nav {
         }
       }
       section.main {

@@ -5,7 +5,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 
 <template>
   <primary-template>
-    <template #left>
+    <template #object1>
       <h1>About Me</h1>
       <p>I was born in upstate New York, Rochester, a good many years ago, and lived there until I was twenty, upon
         which time I decided I wanted to explore the world a bit. I loved to ski and so thought teaching out West
