@@ -9,8 +9,8 @@
         <router-link :to="{ name: 'Home' }">Home</router-link>
         <router-link :to="{ name: 'AllStudents' }">About</router-link>
         <router-link :to="{ name: 'AboutMe' }">Events</router-link>
-        <router-link :to="{ name: 'ContactMe' }">Wildlife</router-link>
-        <router-link :to="{ name: 'ContactMe' }">Resources</router-link>
+        <router-link :to="{ name: 'Wildlife' }">Wildlife</router-link>
+        <router-link :to="{ name: 'Resources' }">Resources</router-link>
       </nav>
     </header>
 
