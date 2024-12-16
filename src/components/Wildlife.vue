@@ -13,7 +13,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
       </p>
     </template>
 
-    <template #right>
+    <template #object2>
 
     </template>
 

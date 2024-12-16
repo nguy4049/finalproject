@@ -88,7 +88,7 @@ const router = createRouter({
 // "Navigation guard"
 router.beforeEach((to, from) => {
     let title = to.meta?.title ?? 'Default Title'
-    document.title = title + ' | ' + 'Nikolai Langlois'
+    document.title = title + ' | ' + 'Long Nguyen'
 })
 
 export default router
