@@ -1,5 +1,4 @@
 <script setup>
-
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 import GenericFrame from "./common/GenericFrame.vue";
 </script>
