@@ -1,6 +1,6 @@
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
-import Wildlife from "./components/Wildlife.vue";
+import ContactMe from "./components/ContactMe.vue";
 import NotFound404 from "./components/NotFound404.vue";
 import {createRouter, createWebHistory} from 'vue-router'
 import AllStudents from "./components/students/AllStudents.vue";
@@ -32,11 +32,11 @@ const router = createRouter({
             }
         },
         {
-            path: '/wildlife',
-            name: 'Wildlife',
-            component: Wildlife,
+            path: '/contactme',
+            name: 'ContactMe',
+            component: ContactMe,
             meta: {
-                title: 'Wildlife'
+                title: 'ContactMe'
             }
         },
         {

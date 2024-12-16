@@ -5,8 +5,8 @@
 </template>
 
 <style scoped>
-  @fontface {
-    font-family: Kay Pho Du Regular;
-    src: url('~@/assets/fonts/KayPhoDu-Regular.ttf');
+  @font-face{
+    font-family: Kay Pho Du Regular,serif;
+    src: url('src/assets/Kay_Pho_Du/KayPhoDu-Regular.ttf');
   }
 </style>
