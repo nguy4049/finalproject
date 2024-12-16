@@ -4,22 +4,23 @@
 <template>
   <section class="primary-template">
     <header>
-      My Students!
+      <img src="../assets/Red_circle.svg" alt="Red_circle" />
       <nav>
         <router-link :to="{ name: 'Home' }">Home</router-link>
-        <router-link :to="{ name: 'AllStudents' }">Students</router-link>
-        <router-link :to="{ name: 'AboutMe' }">About Me</router-link>
-        <router-link :to="{ name: 'ContactMe' }">Contact Me</router-link>
+        <router-link :to="{ name: 'AllStudents' }">About</router-link>
+        <router-link :to="{ name: 'AboutMe' }">Events</router-link>
+        <router-link :to="{ name: 'ContactMe' }">Wildlife</router-link>
+        <router-link :to="{ name: 'ContactMe' }">Resources</router-link>
       </nav>
     </header>
 
     <section class="main">
-      <div class="left">
-        <slot name="left"/>
+      <div class="object1">
+        <slot name="object1"/>
       </div>
 
-      <div class="right">
-        <slot name="right"/>
+      <div class="object2">
+        <slot name="object2"/>
       </div>
     </section>
 
@@ -35,9 +36,17 @@
 <style scoped>
 section.primary-template {
   /* Mobile first */
-  background-color: lightgray;
+  background-color: #EDDFC2;
 
   header {
+    background-color: #EDDFC2;
+
+    img {
+      width: 13%;
+      height: auto;
+      justify-content: center;
+    }
+
     nav {
       font-size: 1rem;
       display: flex;
@@ -46,19 +55,19 @@ section.primary-template {
       justify-content: center;
 
       a {
-        background-color: black;
+        /*background-color: black;*/
         padding: 1rem;
-        color: white;
+        color: #E93F1E;
         text-decoration: none;
-        border-radius: 10px;
-        border: 1px solid grey;
+        /*border-radius: 10px;
+        border: 1px solid grey;*/
 
-          &.router-link-active {
-          font-weight: bold;
+        &.router-link-active {
+          /*font-weight: bold;
           text-decoration: underline;
           background-color: darkblue;
           border-color: white;
-          font-size: 105%;
+          font-size: 105%;*/
         }
 
         &:hover {
@@ -71,27 +80,47 @@ section.primary-template {
   section.main {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #fff;
+    /*background-color: #fff;*/
     padding: 1rem;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 1rem;
-
-    /* Desktop */
-    @media screen and (width > 1000px) {
-      display: flex;
-      flex-direction: row;
-
-      .left {
-        flex-basis: 70%;
-        border-right: 1px solid lightgray;
-        padding-right: 1rem;
-      }
-
-      .right {
-        flex-basis: 30%;
-      }
+    border: 1px solid lightgray;
+    }
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
-}
+
+    /* Tablet */
+@media screen and (width > 700px) {
+      header {
+        img {
+          width: 9%;
+        }
+        nav {
+        }
+      }
+      section.main {
+        display: flex;
+        flex-direction: row;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+    }
+    /* Desktop */
+@media screen and (width > 1000px) {
+      /*display: flex;
+      flex-direction: row;*/
+      header {
+        img {
+          width: 5%;
+        }
+    }
+  }
+
 </style>
