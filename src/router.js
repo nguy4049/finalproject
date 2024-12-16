@@ -1,5 +1,6 @@
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
+import Resources from "./components/Resources.vue";
 import ContactMe from "./components/ContactMe.vue";
 import NotFound404 from "./components/NotFound404.vue";
 import {createRouter, createWebHistory} from 'vue-router'
@@ -7,6 +8,7 @@ import AllStudents from "./components/students/AllStudents.vue";
 import StudentDetails from "./components/students/StudentDetails.vue";
 import AllStudentsByLevel from "./components/students/AllStudentsByLevel.vue";
 import StudentsSearchResults from "./components/students/StudentsSearchResults.vue";
+import Resources from "./components/Resources.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +31,14 @@ const router = createRouter({
             component: About,
             meta: {
                 title: 'About'
+            }
+        },
+        {
+            path: '/resources',
+            name: 'Resources',
+            component: Resources,
+            meta: {
+                title: 'Resources'
             }
         },
         {

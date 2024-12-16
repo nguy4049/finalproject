@@ -1,5 +1,4 @@
 <script setup>
-
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 </script>
 
