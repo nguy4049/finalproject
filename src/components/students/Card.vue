@@ -5,29 +5,10 @@ import GenericFrame from "../common/GenericFrame.vue";
 const router = useRouter()
 const route = useRoute()
 
-const fullName = (studentInfo) => {
-  return studentInfo.first_name + " " + studentInfo.last_name;
-}
-
-const emailString = (str, email) => {
-  if (email) {
-    return '<a href="mailto:' + email + '">' + str + '</a>'
-  }
-}
-
-function getAge(birth) {
-  const ageMS = Date.parse(Date()) - Date.parse(birth);
-  let age = new Date();
-  age.setTime(ageMS);
-  return age.getFullYear() - 1970;
-
-  // ageMonth = age.getMonth(); // Accurate calculation of the month part of the age
-  // ageDay = age.getDate();    // Approximate calculation of the day part of the age
-}
 
 const goToStudentDetails = (id) => {
   router.push({
-    name: 'StudentDetails',
+    name: 'WildlifeDetails',
     params: {
       id: id
     },
@@ -35,7 +16,7 @@ const goToStudentDetails = (id) => {
 }
 
 defineProps({
-  studentInfo: {
+  wildlifeInfo: {
     type: Object,
     required: true
   }
@@ -43,23 +24,18 @@ defineProps({
 </script>
 
 <template>
-  <section class="student-card" @click.native="goToStudentDetails(studentInfo.id)">
-    <div class="headshot">
-      <generic-frame>
-        <img :src="studentInfo.headshot" :alt="fullName(studentInfo)"/>
-      </generic-frame>
-      <p>Age: {{ getAge(studentInfo.birthdate) }}</p>
-    </div>
-    <div class="details">
-      <h4 v-text="fullName(studentInfo)"/>
-      <p>Program: {{ studentInfo.program }}</p>
-      <p>School: {{ studentInfo.university }}</p>
+  <section class="card" @click.native="goToWildlifeDetails(wildlifeInfo.id)">
+    <img src="wildlifeInfo.image" alt="name(wildlifeInfo)">
+    <div class="content">
+      <h4><b>{{wildlifeInfo.name}}</b></h4>
+      <p> {{wildlifeInfo.species}}</p>
+      <p> {{wildlifeInfo.status}}</p>
     </div>
   </section>
 </template>
 
 <style scoped>
-section.student-card {
+section.card {
   /* Mobile first */
   display: flex;
   border: 1px solid lightgray;
@@ -67,7 +43,6 @@ section.student-card {
   width: 100%;
   gap: 1rem;
   padding: 0.5rem;
-
   .headshot {
     min-width: 125px;
     max-width: 125px;

@@ -1,12 +1,10 @@
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
-import ContactMe from "./components/ContactMe.vue";
+import Wildlife from "./components/Wildlife.vue";
 import NotFound404 from "./components/NotFound404.vue";
 import {createRouter, createWebHistory} from 'vue-router'
-import AllStudents from "./components/students/AllStudents.vue";
-import StudentDetails from "./components/students/StudentDetails.vue";
-import AllStudentsByLevel from "./components/students/AllStudentsByLevel.vue";
-import StudentsSearchResults from "./components/students/StudentsSearchResults.vue";
+
+
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,50 +30,12 @@ const router = createRouter({
             }
         },
         {
-            path: '/contact-me',
-            name: 'ContactMe',
-            component: ContactMe,
+            path: '/wildlife',
+            name: 'Wildlife',
+            component: Wildlife,
             meta: {
-                title: 'Contact Me'
+                title: 'Wildlife'
             }
-        },
-        {
-            path: '/students',
-            name: 'Students',
-            children: [
-                {
-                    path: '',
-                    name: 'AllStudents',
-                    component: AllStudents,
-                    meta: {
-                        title: 'All My Students',
-                    }
-                },
-                {
-                    path: 'level/:level',
-                    name: 'AllStudentsByLevel',
-                    component: AllStudentsByLevel,
-                    meta: {
-                        title: 'Filtering by student level',
-                    }
-                },
-                {
-                    path: 'details/:id',
-                    name: 'StudentDetails',
-                    component: StudentDetails,
-                    meta: {
-                        title: 'Student Details',
-                    }
-                },
-                {
-                    path: 'search',
-                    name: 'StudentsSearchResults',
-                    component: StudentsSearchResults,
-                    meta: {
-                        title: 'Student Search Results',
-                    }
-                }
-            ]
         },
         {
             path: "/:catchAll(.*)",
