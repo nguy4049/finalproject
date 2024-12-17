@@ -2,7 +2,7 @@
 import Card from "../students/Card.vue";
 
 const props = defineProps({
-  wildlife: {
+  wildlifes: {
     type: Array,
     required: true
   }
@@ -11,7 +11,7 @@ const props = defineProps({
 
 <template>
   <section class="cards">
-    <card v-for="(wildlife, index) in props.wildlife"
+    <card v-for="(wildlife, index) in props.wildlifes"
           :key="index" :widlife-info="wildlife"/>
   </section>
 </template>

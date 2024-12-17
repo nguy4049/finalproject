@@ -1,6 +1,4 @@
-const data =
-    [
-        {
+const data = [{
             "name": "Ooby Gooby",
             "status":"Healthy",
             "personality": "Quiet",
@@ -65,7 +63,6 @@ const data =
             "vaccine_status":"Vaccinated",
             "species":"Mallard Duck",
             "image":"src/assets/duck.jpeg"
-        },
-    ]
+        },]
 
 export default {data}

@@ -1,16 +1,16 @@
 <script setup>
 import {useRoute, useRouter} from 'vue-router'
-import GenericFrame from "../common/GenericFrame.vue";
 
 const router = useRouter()
 const route = useRoute()
 
 
-const goToStudentDetails = (id) => {
+
+const gotoWildlifeDetails = (name) => {
   router.push({
     name: 'WildlifeDetails',
     params: {
-      id: id
+      name: name
     },
   })
 }
@@ -24,7 +24,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="card" @click.native="goToWildlifeDetails(wildlifeInfo.id)">
+  <section class="wildlife-card" @click.native="goToWildlifeDetails(wildlifeInfo.name)">
     <img src="wildlifeInfo.image" alt="name(wildlifeInfo)">
     <div class="content">
       <h4><b>{{wildlifeInfo.name}}</b></h4>

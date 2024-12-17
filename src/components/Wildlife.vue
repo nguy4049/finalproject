@@ -1,7 +1,8 @@
 <script setup>
 
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
-
+import wildlifeData from '../../WILDLIFE_DATA.js'
+import CardLayout from "./common/CardLayout.vue";
 </script>
 
 <template>
@@ -12,6 +13,9 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
         <div class="text">
           <h1> Wildlife</h1>
           <p> Learn more about the urban wildlife on our campus</p>
+          <div class="wildlife">
+
+          </div>
        </div>
       </div>
     </template>
@@ -19,6 +23,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
     <template #object2>
       <h1> Wildlife on campus</h1>
       <p>Our mission is to raise awareness that the places we call home are also habitats for countless wildlife species. These animals play vital roles in maintaining healthy ecosystems, from pollinating plants and controlling pests to enriching soil and supporting biodiversity. By understanding their importance and protecting their habitats, we contribute to a thriving planet for all life. Let’s work together to ensure harmony between people and nature! </p>
+    <card-layout :wildlifes="wildlifeData.data"/>
     </template>
   </primary-template>
 </template>

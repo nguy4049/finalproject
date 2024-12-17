@@ -3,6 +3,7 @@ import About from "./components/About.vue";
 import Wildlife from "./components/Wildlife.vue";
 import NotFound404 from "./components/NotFound404.vue";
 import {createRouter, createWebHistory} from 'vue-router'
+import WildlifeDetails from "./components/students/WildlifeDetails.vue";
 
 
 
@@ -33,9 +34,12 @@ const router = createRouter({
             path: '/wildlife',
             name: 'Wildlife',
             component: Wildlife,
-            meta: {
-                title: 'Wildlife'
-            }
+            children: [
+                {path: 'details/:name',
+                name: 'WildlifeDetails',
+                component: WildlifeDetails
+                }
+            ]
         },
         {
             path: "/:catchAll(.*)",
