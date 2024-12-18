@@ -12,16 +12,16 @@ const props = defineProps({
 <template>
   <section class="cards">
     <card v-for="(wildlife, index) in props.wildlifes"
-          :key="index" :widlife-info="wildlife"/>
+          :key="index" :wildlife-info="wildlife"/>
   </section>
 </template>
 
 <style scoped>
 section.cards {
-  display: flex;
+ display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: flex-start;
   margin-top: 1rem;
+  border: 1px solid lightgray;
 }
 </style>

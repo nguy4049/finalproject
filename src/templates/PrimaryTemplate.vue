@@ -7,7 +7,7 @@
       <img src="../assets/Red_circle.svg" alt="Red_circle" />
       <nav>
         <router-link :to="{ name: 'Home' }">Home</router-link>
-        <router-link :to="{ name: '' }">Event</router-link>
+        <router-link :to="{ name: 'Event' }">Event</router-link>
         <router-link :to="{ name: 'AboutMe' }">About</router-link>
         <router-link :to="{ name: 'Wildlife' }">Wildlife</router-link>
       </nav>

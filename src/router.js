@@ -1,6 +1,7 @@
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
 import Wildlife from "./components/Wildlife.vue";
+import Event from "./components/Event.vue";
 import NotFound404 from "./components/NotFound404.vue";
 import {createRouter, createWebHistory} from 'vue-router'
 import WildlifeDetails from "./components/students/WildlifeDetails.vue";
@@ -20,6 +21,14 @@ const router = createRouter({
             component: Home,
             meta: {
                 title: 'Welcome to my site!'
+            }
+        },
+        {
+            path: '/event',
+            name: 'Event',
+            component: Event,
+            meta: {
+                title: 'Event'
             }
         },
         {

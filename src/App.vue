@@ -1,5 +1,6 @@
-<script setup></script>
+<script setup>
 
+</script>
 <template>
   <router-view></router-view>
 </template>
@@ -9,4 +10,5 @@
     font-family: Kay Pho Du Regular,serif;
     src: url('src/assets/Kay_Pho_Du/KayPhoDu-Regular.ttf');
   }
+
 </style>
