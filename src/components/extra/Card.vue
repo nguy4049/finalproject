@@ -6,11 +6,11 @@ const route = useRoute()
 
 
 
-const goToWildlifeDetails = (name) => {
+const goToWildlifeDetails = (id) => {
   router.push({
     name: 'WildlifeDetails',
     params: {
-      id: name
+      id: id
     },
   })
 }
@@ -24,14 +24,14 @@ defineProps({
 </script>
 
 <template>
-  <section class="wildlife-card" @click.native="goToWildlifeDetails(wildlifeInfo.name)">
-    <img :src="wildlifeInfo.image" alt="wildlifeInfo.name)">
+  <section class="wildlife-card">
+    <img :src="wildlifeInfo.image" alt="wildlifeInfo.name)"/>
     <div class="content">
       <div class="wildlife-more">
       <h4><b>{{wildlifeInfo.name}}</b></h4>
       <p> {{wildlifeInfo.species}}</p>
       <p> {{wildlifeInfo.status}}</p>
-        <a href="" class="btn"> Learn More</a>
+        <div class="btn" @click.native="goToWildlifeDetails(wildlifeInfo.id)"> Learn More</div>
       </div>
     </div>
   </section>
@@ -78,6 +78,8 @@ div.content {
 
   /* Tablet and up */
   @media screen and (width > 550px) {
-    width: 45%;
+    section.wildlife-card {
+      width: 33%;
+    }
   }
 </style>

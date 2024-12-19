@@ -8,6 +8,7 @@ const data = [{
             "vaccine_status":"Vaccinated",
             "species":"Little Brown Bat",
             "image": "src/assets/bat.jpeg",
+            "id":"obj1-A7X45B",
             "descrption": "A silent night flyer, Luna keeps urban insect populations in check, consuming hundreds of mosquitoes and moths nightly. She roosts in quiet crevices, blending into the urban landscape."
         },
         {
@@ -20,6 +21,7 @@ const data = [{
             "vaccine_status": "Vaccinated",
             "species":"Coyote",
             "image":"src/assets/coyote.jpeg",
+            "id":"obj2-C9T62Z",
             "description": "An adaptable predator, Jasper navigates city greenbelts and suburban edges, balancing ecosystems by controlling rodents and scavenging waste. His sharp instincts help him thrive in urban life."
         },
         {
@@ -32,6 +34,7 @@ const data = [{
             "vaccine_status": "Not vaccinated",
             "species":"American Crow",
             "image":"src/assets/crow.jpeg",
+            "id":"obj3-K5L73D",
             "description": "A clever urban resident, Ruby is known for her problem-solving skills and love for shiny objects. She helps clean up scraps and disperses seeds, playing a vital role in city ecosystems."
         },
         {
@@ -44,6 +47,7 @@ const data = [{
             "vaccine_status":"Not vaccinated",
             "species":"Eastern Box turtle",
             "image":"src/assets/turtle.jpeg",
+            "id":"obj4-F8P91Q",
             "description": "A slow-moving urban gardener, Theo quietly munches on worms and berries while helping maintain soil health in parks and gardens. His calm presence enriches urban biodiversity."
         },
         {
@@ -56,6 +60,7 @@ const data = [{
             "vaccine_status": "Not applicable",
             "species":"Black Rat Snake",
             "image":"src/assets/snake.jpeg",
+            "id":"obj5-M3W48E",
             "description": "A stealthy rodent controller, Ivy is vital for urban pest management. Often unnoticed, she works behind the scenes to maintain ecological balance in city environments."
         },
         {
@@ -68,6 +73,7 @@ const data = [{
             "vaccine_status":"Vaccinated",
             "species":"Mallard Duck",
             "image":"src/assets/duck.jpeg",
+            "id":"obj6-J2N84R",
             "description": "A familiar face in ponds and waterways, Milo brings life to urban water ecosystems. With his vibrant plumage, he delights passersby while helping control aquatic plants and insects."
         },]
 

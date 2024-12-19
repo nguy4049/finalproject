@@ -1,10 +1,12 @@
+import {createRouter, createWebHistory} from 'vue-router'
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
 import Wildlife from "./components/Wildlife.vue";
 import Event from "./components/Event.vue";
+import Resources from "./components/Resources.vue";
+import Possum from "./components/Possum.vue";
 import NotFound404 from "./components/NotFound404.vue";
-import {createRouter, createWebHistory} from 'vue-router'
-import WildlifeDetails from "./components/students/WildlifeDetails.vue";
+import WildlifeDetails from "./components/extra/WildlifeDetails.vue";
 
 
 
@@ -24,6 +26,14 @@ const router = createRouter({
             }
         },
         {
+            path: '/possum',
+            name: 'Possum',
+            component: Possum,
+            meta: {
+                title: 'Possum'
+            }
+        },
+        {
             path: '/event',
             name: 'Event',
             component: Event,
@@ -40,11 +50,20 @@ const router = createRouter({
             }
         },
         {
+            path: '/resources',
+            name: 'Resources',
+            component: Resources,
+            meta: {
+                title: 'Resources'
+            }
+        },
+        {
             path: '/wildlife',
             name: 'Wildlife',
             component: Wildlife,
             children: [
-                {path: 'details/:name',
+                {
+                path: 'details/:id',
                 name: 'WildlifeDetails',
                 component: WildlifeDetails
                 }

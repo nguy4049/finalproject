@@ -1,5 +1,5 @@
 <script setup>
-import Card from "../students/Card.vue";
+import Card from "../extra/Card.vue";
 
 const props = defineProps({
   wildlifes: {
@@ -23,5 +23,15 @@ section.cards {
   flex-wrap: wrap;
   margin-top: 1rem;
   border: 1px solid lightgray;
+:hover {
+  transform: scale(1.05);
+
+}
+}
+/* Tablet*/
+@media screen and (width > 500px) {
+  display: flex;
+  flex-direction: row;
+
 }
 </style>

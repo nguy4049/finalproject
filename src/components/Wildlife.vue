@@ -14,7 +14,6 @@ import CardLayout from "./common/CardLayout.vue";
           <h1> Wildlife</h1>
           <p> Learn more about the urban wildlife on our campus</p>
           <div class="wildlife">
-
           </div>
        </div>
       </div>
@@ -33,6 +32,7 @@ import CardLayout from "./common/CardLayout.vue";
 <style scoped>
 .info {
   width: 100%;
+  height: auto;
 }
   .hero {
     position: relative;
@@ -57,4 +57,6 @@ h1 {
     width: 100%;
     display: block;
   }
+  /*Tablet*/
+
 </style>

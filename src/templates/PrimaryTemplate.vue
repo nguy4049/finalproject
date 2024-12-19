@@ -10,6 +10,7 @@
         <router-link :to="{ name: 'Event' }">Event</router-link>
         <router-link :to="{ name: 'AboutMe' }">About</router-link>
         <router-link :to="{ name: 'Wildlife' }">Wildlife</router-link>
+        <router-link :to="{ name: 'Resources' }">Resources</router-link>
       </nav>
     </header>
 
@@ -49,7 +50,7 @@ section.primary-template {
     nav {
       font-size: 1rem;
       display: flex;
-      gap: 1rem;
+      gap: 0.1rem;
       margin-top: 1rem;
       justify-content: center;
 
@@ -86,31 +87,37 @@ section.primary-template {
 }
 
     /* Tablet */
-@media screen and (width > 700px) {
+@media screen and width > 700px) {
       header {
         img {
-          width: 9%;
+          width: 6%;
         }
       }
       section.main {
-        display: flex;
+        display: block;
         flex-direction: row;
-        img {
-          width: 100%;
-          height: auto;
+
         }
-      }
 
     }
     /* Desktop */
 @media screen and (width > 1000px) {
-      /*display: flex;
-      flex-direction: row;*/
-      header {
-        img {
-          width: 5%;
-        }
-    }
+      flex-direction: row;
+header {
+  img {
+    width: 3%;
   }
+  nav {
+    gap: 3rem;
+    font-size: 1.2rem;
+  }
+  div.object1 {
+
+  }
+  img {
+    width: 5%;
+  }
+}
+}
 
 </style>

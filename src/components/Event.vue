@@ -19,7 +19,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
         </div>
       </div>
       <div class="set">
-        <img src="../assets/KB9U5_I6TcevL-p9G9TZgQ.webp" alt="volunteer">
+        <img src="../assets/volunteer.png" alt="volunteer">
         <div class="line-content">
           <h4><b>Volunteer Animal Helpers</b></h4>
           <p>December 24, 2024</p>
@@ -28,7 +28,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
         </div>
       </div>
         <div class="set">
-          <img src="../assets/KB9U5_I6TcevL-p9G9TZgQ.webp" alt="explore">
+          <img src="../assets/ONE_Urban-Ecology-Collection-image2-16x9.png" alt="explore">
           <div class="line-content">
             <h4><b>Explore your wild urban ecosystem</b></h4>
             <p>December 28, 2024</p>
@@ -42,7 +42,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 </template>
 
 <style scoped>
-h1 {
+h1, h4 {
   text-align: center;
   text-transform: uppercase;
   color: #E93F1E;

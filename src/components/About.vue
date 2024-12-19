@@ -24,7 +24,8 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
         <div class="donation">
           <h1> Give today</h1>
           <p> Your gift today will give critical care to abandoned injured and orphaned animals right now, in their time of need.</p>
-          <img src="../assets/DonateNow.svg" alt="DonateNow" />
+          <div id="donate">
+          </div>
         </div>
 
       </div>
@@ -55,16 +56,16 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
     h1 {
       color: #1a1a1a;
     }
-
-    img {
+    #donate {
+      background-image: url(../assets/DonateNow.svg);
+      height: 73px;
+      width: 165px;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 30%;
-
-      img:hover {
-        background-image: url(../assets/DonateNow_hover.svg);
-      }
+    }
+    #donate:hover {
+      background-image: url(../assets/DonateNow_hover.svg);
     }
   }
   img {
@@ -73,4 +74,5 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
     margin: 0;
   }
 }
+
 </style>
