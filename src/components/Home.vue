@@ -24,42 +24,47 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 </template>
 
 <style scoped>
- #object1 {
-   width: 100%;
-}
-h1, h2 {
-  font-family: "Kay Pho Du Regular", Avenir, Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #e93f1e
-}
-h1 {
-  font-size: 3.2rem;
-}
-h2 {
-  padding: 10rem 0 0 0;
-}
-img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-p {
-  width: 100%;
-}
-.btn {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #333;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-top: 16px;
-  color: #fff;
-  margin-bottom: 20px;
-  margin-left: 200px;
-}
+/* Mobile first */
+@media screen and (min-width: 200px) {
+   h1, h2 {
+     font-family: "Kay Pho Du Regular", Avenir, Helvetica, Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     color: #e93f1e
+   }
+
+   h1 {
+     font-size: 3.2rem;
+   }
+
+   h2 {
+     padding: 10rem 0 0 0;
+   }
+
+   img {
+     object-fit: contain;
+     width: 100%;
+     height: 100%;
+   }
+
+   p {
+     width: 100%;
+   }
+
+   .btn {
+     display: inline-block;
+     padding: 8px 16px;
+     background-color: #333;
+     text-decoration: none;
+     border-radius: 4px;
+     margin-top: 16px;
+     color: #fff;
+     margin-bottom: 20px;
+     margin-left: 200px;
+   }
+ }
 /*Tablet*/
-@media screen and (width > 800px) {
+@media screen and (width > 700px) {
   display: block;
   .btn {
     margin-left: 600px;

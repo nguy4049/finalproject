@@ -36,30 +36,24 @@
 <style scoped>
 section.primary-template {
   /* Mobile first */
-  background-color: #EDDFC2;
-
-  header {
+  @media screen and (min-width: 200px) {
     background-color: #EDDFC2;
 
-    img {
-      width: 13%;
-      height: auto;
-      justify-content: center;
-    }
+    header {
+      background-color: #EDDFC2;
 
-    nav {
-      font-size: 1rem;
-      display: flex;
-      gap: 0.1rem;
-      margin-top: 1rem;
-      justify-content: center;
+      nav {
 
-      a {
-        /*background-color: black;*/
-        padding: 1rem;
-        color: #E93F1E;
-        text-decoration: none;
-        /*border-radius: 10px;
+        display: flex;
+        margin-top: 1rem;
+        justify-content: center;
+
+        a {
+          /*background-color: black;*/
+          padding: 1rem;
+          color: #E93F1E;
+          text-decoration: none;
+          /*border-radius: 10px;
         border: 1px solid grey;*/
 
         }
@@ -70,7 +64,15 @@ section.primary-template {
       }
     }
   }
-
+@media screen and (width < 700px) {
+  header {
+    img {
+      width: 13%;
+      height: auto;
+      justify-content: center;
+    }
+  }
+}
   section.main {
     max-width: 900px;
     margin: 0 auto;
@@ -80,17 +82,22 @@ section.primary-template {
     flex-direction: column;
     gap: 1rem;
     border: 1px solid lightgray;
+
     img {
       width: 100%;
       height: 100%;
     }
+  }
 }
-
     /* Tablet */
-@media screen and width > 700px) {
+@media screen and (width > 700px) {
       header {
         img {
           width: 6%;
+        }
+        nav {
+          font-size: 1.5rem;
+          gap: 1rem;
         }
       }
       section.main {
@@ -109,7 +116,7 @@ header {
   }
   nav {
     gap: 3rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   div.object1 {
 
