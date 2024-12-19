@@ -60,17 +60,26 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
      margin-top: 16px;
      color: #fff;
      margin-bottom: 20px;
-     margin-left: 200px;
+
    }
  }
+
+@media screen and (width < 700px) {
+  .btn {
+    margin-left: 200px;
+  }
+}
 /*Tablet*/
 @media screen and (width > 700px) {
-  display: block;
   .btn {
-    margin-left: 600px;
+    margin-left: 650px;
   }
-
-
 }
 
+/*Desktop*/
+@media screen and (width > 1000px) {
+  .btn {
+    margin-left: 750px;
+  }
+}
 </style>

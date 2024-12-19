@@ -34,8 +34,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 </template>
 
 <style scoped>
-.container {
-  max-width: 500px;
+
   h1 {
     color: #E93F1E;
   }
@@ -73,6 +72,6 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
     padding: 0;
     margin: 0;
   }
-}
+
 
 </style>

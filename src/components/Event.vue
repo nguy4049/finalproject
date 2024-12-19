@@ -73,7 +73,6 @@ div.form {
         line-height: 1.3;
       }
       .btn {
-        display: inline-block;
         padding: 8px 16px;
         background-color: #333;
         text-decoration: none;
